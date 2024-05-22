@@ -12,4 +12,5 @@
 ![](img/datadog-ddtrace-02.png)
 
 * Profiler for CPU + Thread analysis
+  
 ![](img/datadog-profiler.png)
