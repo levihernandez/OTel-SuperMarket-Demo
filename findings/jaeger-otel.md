@@ -9,8 +9,8 @@
 
 * Proper mapping of the manually instrumented functions
 
-![](img/jaeger-02.png)
+![](../img/jaeger-02.png)
 
 * Flamegraph stats for execution time
 
-![](img/jaeger-03.png)
+![](../img/jaeger-03.png)
