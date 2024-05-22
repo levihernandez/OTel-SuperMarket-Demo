@@ -58,3 +58,9 @@ otlp_config:
   * http://192.168.86.37:8081/supplier/Meat%20Masters
   * ![](img/json-payload.png)
 * Review the OTel traces in the observability tool, for example in [Datadog](https://app.datadoghq.com/apm/home) APM.
+
+## Tracing Python Flask with Datadog `ddtrace`
+
+* Install the Datadog library
+* Auto Instrument with Datadog `ddtrace`
+* [Datadog Results](datadog-ddtrace.md)
