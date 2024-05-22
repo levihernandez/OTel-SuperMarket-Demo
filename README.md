@@ -1,6 +1,6 @@
-# FastInventory with Datadog
+# OTel-SuperMarket-Demo with Datadog
 
-FastInventory is only a template using OpenTelemetry traces.
+OTel-SuperMarket-Demo is only a sample code for OpenTelemetry traces with Datadog.
 
 * Example hosts: 
   * App host: `192.168.86.37` or `127.0.0.1`
@@ -16,7 +16,6 @@ FastInventory is only a template using OpenTelemetry traces.
 pip install Flask
 pip install opentelemetry-sdk
 pip install opentelemetry-exporter-otlp
-pip install opentelemetry-exporter-datadog
 pip install opentelemetry-instrumentation-flask
 pip install opentelemetry.instrumentation.sqlalchemy
 pip install SQLAlchemy
@@ -41,6 +40,6 @@ otlp_config:
 * Restart the Datadog agent
 * Run each micro-service as `python run.py inventory`
 * Access the endpoints for testing:
-  * http://127.0.0.1:8081/category/Seafood
-  * http://127.0.0.1:8081/supplier/Meat%20Masters
+  * http://192.168.86.37:8081/category/Seafood
+  * http://192.168.86.37:8081/supplier/Meat%20Masters
 * Review the OTel traces in the observability tool, for example in [Datadog](https://app.datadoghq.com/apm/home) APM.
