@@ -1,6 +1,8 @@
 # OTel-SuperMarket-Demo with Datadog
 
-OTel-SuperMarket-Demo is only a sample code for OpenTelemetry traces with Datadog.
+OTel-SuperMarket-Demo is only a sample code for OpenTelemetry traces with Datadog. In this example, I show the different ways of shipping traces to Datadog and Jaeger.
+
+## Manual Instrumentation
 
 * Example hosts: 
   * App host: `192.168.86.37` or `127.0.0.1`
@@ -53,7 +55,7 @@ otlp_config:
 * Create the database `marketdb` in Postgres
 * Seed the DB with Faker data `python inventory_management/seed_db.py`
 * Run each micro-service as `python run.py inventory`
-* Access the endpoints for testing ([Jaeger](jaeger.md) & [Datadog](datadog.md) sample results):
+* Access the endpoints for testing ([Jaeger OTel Results](jaeger.md) & [Datadog OTel Results](datadog.md) sample results):
   * http://192.168.86.37:8081/category/Seafood
   * http://192.168.86.37:8081/supplier/Meat%20Masters
   * ![](img/json-payload.png)
