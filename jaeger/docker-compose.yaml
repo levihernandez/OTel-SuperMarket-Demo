@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: jaeger
+    environment:
+      - COLLECTOR_OTLP_ENABLED=true
+    ports:
+      - 6831:6831/udp   # UDP protocol: accept jaeger.thrift in compact Thrift protocol used by most current Jaeger clients
+      - 6832:6832/udp   # UDP protocol: accept jaeger.thrift in binary Thrift protocol used by Node.js Jaeger client (because thriftrw npm package does not support compact protocol)
+      - 16686:16686     # HTTP protocol: /api/* endpoints and Jaeger UI at /
+      - 14268:14268     # HTTP protocol: can accept spans directly from clients in jaeger.thrift format over binary thrift protocol
+      - 4318:4318       # HTTP protocol: accepts traces in OpenTelemetry OTLP format if --collector.otlp.enabled=true
+      - 4317:4317       # OTel port
+    networks:
+      - jaeger
+
+networks:
+  jaeger:
+    driver: bridge
