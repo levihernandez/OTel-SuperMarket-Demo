@@ -63,4 +63,5 @@ otlp_config:
 
 * Install the Datadog library
 * Auto Instrument with Datadog `ddtrace`
+ * `DD_SERVICE="order-processing" DD_ENV="test" DD_LOGS_INJECTION=true DD_PROFILING_ENABLED=true DD_APPSEC_ENABLED=true ddtrace-run python run.py order`
 * [Datadog Results](datadog-ddtrace.md)
