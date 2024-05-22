@@ -55,7 +55,7 @@ otlp_config:
 * Create the database `marketdb` in Postgres
 * Seed the DB with Faker data `python inventory_management/seed_db.py`
 * Run each micro-service as `python run.py inventory`
-* Access the endpoints for testing ([Jaeger OTel Results](jaeger.md) & [Datadog OTel Results](datadog.md) sample results):
+* Access the endpoints for testing ([Jaeger OTel Results](findings/jaeger-otel.md) & [Datadog OTel Results](findings/datadog-otel.md) sample results):
   * http://192.168.86.37:8081/category/Seafood
   * http://192.168.86.37:8081/supplier/Meat%20Masters
   * ![](img/json-payload.png)
@@ -69,7 +69,7 @@ otlp_config:
 * Access the endpoints and generate transactions and traces
   * http://192.168.86.37:8082/category/Seafood
   * http://192.168.86.37:8082/supplier/Meat%20Masters
-* [Datadog Results](datadog-ddtrace.md)
+* [Datadog Results](findings/datadog-ddtrace.md)
 
 ## Auto Instrumentation of Python Flask with OTel
 
@@ -92,4 +92,4 @@ python run.py order
 * Access the endpoints and generate transactions and traces
   * http://192.168.86.37:8082/category/Seafood
   * http://192.168.86.37:8082/supplier/Meat%20Masters
-* OTel Auto Instrumentation might need additional configs as the transaction query was missing, see [OTel Auto Instrumentation Results](otel-auto-instrumentation.md)
+* OTel Auto Instrumentation might need additional configs as the transaction query was missing, see [OTel Auto Instrumentation Results](findings/otel-auto-instrumentation.md)
