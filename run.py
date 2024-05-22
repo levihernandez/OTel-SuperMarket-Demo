@@ -5,7 +5,6 @@ from order_processing import app as order_app
 
 if __name__ == '__main__':
     if len(sys.argv) > 1 and sys.argv[1] == 'inventory':
-        # inventory_app.run(debug=True, host='0.0.0.0', port=8081)
         inventory_app.app.run(debug=True, host='0.0.0.0', port=8081)
         sys.exit()
     elif len(sys.argv) > 1 and sys.argv[1] == 'order':
