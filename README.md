@@ -93,4 +93,4 @@ python run.py order
 * Access the endpoints and generate transactions and traces
   * http://192.168.86.37:8082/category/Seafood
   * http://192.168.86.37:8082/supplier/Meat%20Masters
-* OTel Auto Instrumentation might need additional configs as the transaction query was missing, see [OTel Auto Instrumentation Results](findings/otel-auto-instrumentation.md)
+* OTel Auto Instrumentation traces data at the system level and internal functions are not captured, see [OTel Auto Instrumentation Results](findings/otel-auto-instrumentation.md)
