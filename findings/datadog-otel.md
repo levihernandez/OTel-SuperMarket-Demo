@@ -4,10 +4,10 @@
 
 * Proper representation of the manually instrumented functions
 
-![](img/datadog-01.png)
+![](../img/datadog-01.png)
 
 * Breakdown of each manually instrumented resource
 
-![](img/datadog-02.png)
+![](../img/datadog-02.png)
 
 * Visual Map only presented the single service (unlike Jaeger) 
