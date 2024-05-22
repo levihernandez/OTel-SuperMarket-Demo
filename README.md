@@ -85,4 +85,4 @@ opentelemetry-instrument \
 python run.py order
 
 ```
-* 
+* OTel Auto Instrumentation might need additional configs as the transaction query was missing, see [OTel Auto Instrumentation Results](otel-auto-instrumentation.md)
