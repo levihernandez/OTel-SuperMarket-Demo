@@ -56,4 +56,5 @@ otlp_config:
 * Access the endpoints for testing ([Jaeger](jaeger.md) & [Datadog](datadog.md) sample results):
   * http://192.168.86.37:8081/category/Seafood
   * http://192.168.86.37:8081/supplier/Meat%20Masters
+  * ![](img/json-payload.png)
 * Review the OTel traces in the observability tool, for example in [Datadog](https://app.datadoghq.com/apm/home) APM.
