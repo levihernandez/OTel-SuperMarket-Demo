@@ -53,7 +53,7 @@ otlp_config:
 * Create the database `marketdb` in Postgres
 * Seed the DB with Faker data `python inventory_management/seed_db.py`
 * Run each micro-service as `python run.py inventory`
-* Access the endpoints for testing:
+* Access the endpoints for testing ([Jaeger](jaeger.md) & [Datadog](datadog.md) sample results):
   * http://192.168.86.37:8081/category/Seafood
   * http://192.168.86.37:8081/supplier/Meat%20Masters
 * Review the OTel traces in the observability tool, for example in [Datadog](https://app.datadoghq.com/apm/home) APM.
