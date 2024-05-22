@@ -13,6 +13,6 @@ FROM products
   WHERE products.supplier = ?
 ```
 
-![](img/otel-auto-01.png)
+![](../img/otel-auto-01.png)
 
-![](img/otel-auto-02.png)
+![](../img/otel-auto-02.png)
