@@ -38,7 +38,7 @@ export OTLP_ENDPOINT="http://192.168.86.62:4317"
 export OTLP_ENDPOINT="http://192.168.86.37:4317"
 ```
 * Configure Datadog agent to enable OTel integration
-```commandline
+```yaml
 # configuration in datadog.yaml
 #...
 # other Datadog configs, including API Key
@@ -51,6 +51,7 @@ otlp_config:
       grpc:
         endpoint: 192.168.86.37:4317
 ```
+
 * Restart the Datadog agent
 * Create the database `marketdb` in Postgres
 * Seed the DB with Faker data `python inventory_management/seed_db.py`
@@ -74,7 +75,7 @@ otlp_config:
 ## Auto Instrumentation of Python Flask with OTel
 
 * Install OTel libraries
-```commandline
+```shell
 pip install opentelemetry-distro
 pip install opentelemetry-exporter-otlp
 
