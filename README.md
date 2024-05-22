@@ -38,6 +38,10 @@ export OTLP_ENDPOINT="http://192.168.86.37:4317"
 * Configure Datadog agent to enable OTel integration
 ```commandline
 # configuration in datadog.yaml
+#...
+# other Datadog configs, including API Key
+#...
+
 ## Enable OpenTelemetry Collector
 otlp_config:
   receiver:
@@ -46,6 +50,8 @@ otlp_config:
         endpoint: 192.168.86.37:4317
 ```
 * Restart the Datadog agent
+* Create the database `marketdb` in Postgres
+* Seed the DB with Faker data `python inventory_management/seed_db.py`
 * Run each micro-service as `python run.py inventory`
 * Access the endpoints for testing:
   * http://192.168.86.37:8081/category/Seafood
