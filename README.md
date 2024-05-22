@@ -10,8 +10,12 @@ OTel-SuperMarket-Demo is only a sample code for OpenTelemetry traces with Datado
     * OTel Port: `4317`
   * Jaeger UI: `http://192.168.86.62:16686/` (optional)
 * Clone the project: `git clone`
-* Install Python dependencies
+* Set venv and install Python dependencies
 ```commandline
+# Setup venv
+python -m venv venv
+source venv/bin/activate
+
 # Install dependencies
 pip install Flask
 pip install opentelemetry-sdk
