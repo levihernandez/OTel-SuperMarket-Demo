@@ -76,9 +76,11 @@ pip install opentelemetry-exporter-otlp
 
 opentelemetry-bootstrap -a install
 
+OTEL_RESOURCE_ATTRIBUTES=service.name=order-processing,environment=test-01,env=test \
+OTEL_EXPORTER_OTLP_INSECURE=true \
 OTEL_SERVICE_NAME=order-processing \
 OTEL_TRACES_EXPORTER=otlp \
-OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=192.168.86.37:4317
+OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=192.168.86.37:4317 \
 opentelemetry-instrument \
 python run.py order
 
