@@ -28,8 +28,12 @@ pip install psycopg2-binary
 # Set the DB
 export DATABASE_URL="postgresql://postgres:postgres@192.168.86.53:5432/marketdb"
 
-# Set the OTel OTLP endpoint
+# Choose the OTLP Endpoint
+## Set the OTel OTLP endpoint for Jaeger (can be deployed via docker compose separately)
 export OTLP_ENDPOINT="http://192.168.86.62:4317"
+
+## Set the OTel OTLP endpoint for Datadog Agent
+export OTLP_ENDPOINT="http://192.168.86.37:4317"
 ```
 * Configure Datadog agent to enable OTel integration
 ```commandline
