@@ -1,4 +1,4 @@
-# OTel-SuperMarket-Demo with Datadog
+# OTel-SuperMarket-Demo
 
 OTel-SuperMarket-Demo is only a sample code for OpenTelemetry traces with Datadog. In this example, I show the different ways of shipping traces to Datadog and Jaeger.
 
