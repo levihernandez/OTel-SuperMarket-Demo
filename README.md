@@ -59,7 +59,7 @@ otlp_config:
   * ![](img/json-payload.png)
 * Review the OTel traces in the observability tool, for example in [Datadog](https://app.datadoghq.com/apm/home) APM.
 
-## Tracing Python Flask with Datadog `ddtrace`
+## Auto Instrumentation of Python Flask with Datadog `ddtrace`
 
 * Install the Datadog library
 * Auto Instrument with Datadog `ddtrace`
