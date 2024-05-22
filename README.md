@@ -66,8 +66,10 @@ otlp_config:
 * Install the Datadog library
 * Auto Instrument with Datadog `ddtrace`
  * `DD_SERVICE="order-processing" DD_ENV="test" DD_LOGS_INJECTION=true DD_PROFILING_ENABLED=true DD_APPSEC_ENABLED=true ddtrace-run python run.py order`
+* Access the endpoints and generate transactions and traces
+  * http://192.168.86.37:8082/category/Seafood
+  * http://192.168.86.37:8082/supplier/Meat%20Masters
 * [Datadog Results](datadog-ddtrace.md)
-
 
 ## Auto Instrumentation of Python Flask with OTel
 
@@ -87,4 +89,7 @@ opentelemetry-instrument \
 python run.py order
 
 ```
+* Access the endpoints and generate transactions and traces
+  * http://192.168.86.37:8082/category/Seafood
+  * http://192.168.86.37:8082/supplier/Meat%20Masters
 * OTel Auto Instrumentation might need additional configs as the transaction query was missing, see [OTel Auto Instrumentation Results](otel-auto-instrumentation.md)
