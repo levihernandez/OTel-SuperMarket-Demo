@@ -7,7 +7,7 @@
 ![](../img/otel-auto-01.png)
 
 * Two spans were auto discovered (connect + SELECT marketdb)
-* The transaction query from the API is missing (might need additional configs or libraries?):
+* The transaction query from the API is missing (might need to manually instrument and add SQL tracing library):
   
 ```sql
 SELECT products.id,
