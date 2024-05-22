@@ -2,7 +2,7 @@
 
 ## Outcomes Performed by OpenTelemetry Manual Instrumentation
 
-* APM Trace + Discovery of SQL transaction with SQLAlchemy
+* APM OpenTelemetry Trace + Discovery of SQL transaction with SQLAlchemy shipped to Jaeger
   * `SQLAlchemyInstrumentor().instrument(engine=engine, enable_commenter=True, commenter_options={"db_driver": True})`
 
 ![](img/jaeger-01.png)
