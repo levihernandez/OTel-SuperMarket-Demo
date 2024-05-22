@@ -65,3 +65,22 @@ otlp_config:
 * Auto Instrument with Datadog `ddtrace`
  * `DD_SERVICE="order-processing" DD_ENV="test" DD_LOGS_INJECTION=true DD_PROFILING_ENABLED=true DD_APPSEC_ENABLED=true ddtrace-run python run.py order`
 * [Datadog Results](datadog-ddtrace.md)
+
+
+## Auto Instrumentation of Python Flask with OTel
+
+* Install OTel libraries
+```commandline
+pip install opentelemetry-distro
+pip install opentelemetry-exporter-otlp
+
+opentelemetry-bootstrap -a install
+
+OTEL_SERVICE_NAME=order-processing \
+OTEL_TRACES_EXPORTER=otlp \
+OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=192.168.86.37:4317
+opentelemetry-instrument \
+python run.py order
+
+```
+* 
