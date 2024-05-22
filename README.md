@@ -13,7 +13,7 @@ OTel-SuperMarket-Demo is only a sample code for OpenTelemetry traces with Datado
   * Jaeger UI: `http://192.168.86.62:16686/` (optionally deploy the [Jaeger docker compose](/jaeger/docker-compose.yaml))
 * Clone the project: `git clone https://github.com/levihernandez/OTel-SuperMarket-Demo.git`
 * Set venv and install Python dependencies
-```commandline
+```shell
 # Setup venv
 python -m venv venv
 source venv/bin/activate
